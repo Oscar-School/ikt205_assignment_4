@@ -1,9 +1,9 @@
-For å kjøre dette projektet trenger man at dette er instalert:  
+##For å kjøre dette projektet trenger man at dette er instalert:  
 
 Node.js  
 Expo CLI  
 
-Så intaller alle nødvendige pakker med 'npm install'  
+Så intaller alle nødvendige pakker med `npm install`  
 
 Så lag en .env fil med disse variblene  
 
@@ -11,12 +11,12 @@ EXPO_PUBLIC_SUPABASE_URL=https://din-prosjekt-id.supabase.co
 EXPO_PUBLIC_SUPABASE_ANON_KEY=din--anon-key   
 (dette er for å kunne koble til supabase, hvis ikke appen har dette krasjer den)  
 
-så kjør 'npx expo start' og åpne appen med expo go appen på telefonen.  
+så kjør `npx expo start` og åpne appen med expo go appen på telefonen.  
 
 for å kjøre testene så kjør `npm test`  
 
 
-Krav  
+#Krav  
 1. The Testing Suite (35%)  
 
 x(10%) Unit Test - Opprettelse & Navigasjon: Lag en test som bekrefter at når et gyldig notat sendes inn, blir det "opprettet" (logikken kjører) og brukeren blir automatisk navigert tilbake til hovedskjermen.  
