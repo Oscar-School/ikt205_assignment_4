@@ -1,4 +1,4 @@
-##For å kjøre dette projektet trenger man at dette er instalert:  
+## For å kjøre dette projektet trenger man at dette er instalert:  
 
 Node.js  
 Expo CLI  
@@ -16,7 +16,7 @@ så kjør `npx expo start` og åpne appen med expo go appen på telefonen.
 for å kjøre testene så kjør `npm test`  
 
 
-#Krav  
+# Krav  
 1. The Testing Suite (35%)  
 
 x(10%) Unit Test - Opprettelse & Navigasjon: Lag en test som bekrefter at når et gyldig notat sendes inn, blir det "opprettet" (logikken kjører) og brukeren blir automatisk navigert tilbake til hovedskjermen.  
