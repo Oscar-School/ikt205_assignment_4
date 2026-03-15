@@ -1,51 +1,43 @@
-# Welcome to your Expo app 👋
+For å kjøre dette projektet trenger man at dette er instalert:  
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Node.js  
+Expo CLI  
 
-## Get started
+Så intaller alle nødvendige pakker med 'npm install'  
 
-1. Install dependencies
+Så lag en .env fil med disse variblene  
 
-   ```bash
-   npm install
-   ```
+EXPO_PUBLIC_SUPABASE_URL=https://din-prosjekt-id.supabase.co  
+EXPO_PUBLIC_SUPABASE_ANON_KEY=din--anon-key   
+(dette er for å kunne koble til supabase, hvis ikke appen har dette krasjer den)  
 
-2. Start the app
+så kjør 'npx expo start' og åpne appen med expo go appen på telefonen.  
 
-   ```bash
-   npx expo start
-   ```
+for å kjøre testene så kjør 'npm test'  
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Krav  
+1. The Testing Suite (35%)  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+x(10%) Unit Test - Opprettelse & Navigasjon: Lag en test som bekrefter at når et gyldig notat sendes inn, blir det "opprettet" (logikken kjører) og brukeren blir automatisk navigert tilbake til hovedskjermen.  
+x(15%) Integration Test - Mocking & Loader: Lag en test som simulerer henting av et notat fra databasen. Testen skal verifisere at en "laste-indikator" (spinner/loader) er synlig mens kallet pågår, og at den forsvinner når det enkelte notatet er lastet inn.  
+x(10%) Auth Guard Test - Tilgangskontroll: Test at appens beskyttede innhold (f.eks. "Legg til notat"-skjermen eller selve notatlisten) ikke er tilgjengelig eller synlig dersom brukeren ikke er logget inn.  
+ 
 
-## Get a fresh project
+2. Production Readiness & Optimization (40%)  
+  
+x(10%) Log Cleanup: Det skal være null console.log-setninger i den endelige innleveringen. Koden skal fremstå profesjonell og "ren".  
+x(10%) Resource Management - Kamera: Sørg for at kamerakomponenten ikke kjører i bakgrunnen. Den må enten avmonteres helt (unmount) eller settes i en "pause"-tilstand når brukeren navigerer bort fra skjermen.  
 
-When you're ready, run:
+Pagination (Skalering):  
 
-```bash
-npm run reset-project
-```
+x(10%) Endre logikken for henting av notater slik at appen kun henter de 5 første notatene fra databasen.  
+x(10%) Implementer en "Last mer"-knapp (eller automatisk "infinite scroll") som henter de neste 5 notatene.  
+ 
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3. Build & Dokumentasjon (25%)  
 
-## Learn more
+x(10%) App Fil: En kjørbar build-fil (f.eks. en .apk for Android) må legges ved. Denne teller alene 10% og må fungere i en emulator eller på en fysisk enhet.  
+x(15%) Build-dokumentasjon (README):  
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-# ikt205_assignment_4
+Totalt 100%  
