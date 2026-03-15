@@ -13,7 +13,7 @@ EXPO_PUBLIC_SUPABASE_ANON_KEY=din--anon-key
 
 så kjør 'npx expo start' og åpne appen med expo go appen på telefonen.  
 
-for å kjøre testene så kjør 'npm test'  
+for å kjøre testene så kjør `npm test`  
 
 
 Krav  
