@@ -1,4 +1,5 @@
-## For å kjøre dette projektet trenger man at dette er instalert:  
+## Build
+For å kjøre dette projektet trenger man at dette er instalert:  
 
 Node.js  
 Expo CLI  
@@ -13,7 +14,7 @@ EXPO_PUBLIC_SUPABASE_ANON_KEY=din--anon-key
 
 så kjør `npx expo start` og åpne appen med expo go appen på telefonen.  
 
-for å kjøre testene så kjør `npm test`  
+For å kjøre testene så kjør `npm test`  
 
 
 # Krav  
